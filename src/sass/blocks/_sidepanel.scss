@@ -23,4 +23,16 @@
 			color: black;
 		}
 	}
+	&__link {
+		transition: .7s all;
+		svg {
+			&:hover {
+				scale: 1.1 ;
+				fill: $main-color;
+				path {
+					fill: $main-color;
+				}
+			}
+		}
+	}
 }

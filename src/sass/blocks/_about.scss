@@ -1,0 +1,69 @@
+.about {
+	&-description {
+		padding: 120px 100px 0 0;
+		display: grid;
+		grid-template-columns: 400px 570px;
+		grid-template-rows: 300px 233px;
+		//grid-auto-rows: 245px 260px;
+		grid-template-areas:
+		"img text"
+		"img skills";
+		column-gap: 70px;
+		&__img {
+			grid-area: img;
+			img {
+				width: 100%;
+			}
+		}
+		&__text {
+			grid-area: text;
+			&_divider {
+				border: 1px solid $main-color;
+				width: 60px;
+			}
+			&__subtitle {
+				padding-left: 12px;
+				position: relative;
+				@include before_circle;
+			}
+			&__title {
+				line-height: 43px;
+			}
+			&_big {
+				margin-top: 24px;
+			}
+		}
+		&__skills {
+			grid-area: skills;
+			display: grid;
+			grid-template-columns: repeat(2, 260px);
+			grid-template-rows: 120px;
+			grid-auto-rows: 120px;
+			column-gap: 50px;
+			&-item {
+				&_items {
+					padding-left: 60px;
+					position: relative;
+					@include before_circle;
+					&:before {
+						top: -1%;
+						left: 0px;
+					}
+					svg {
+						position: absolute;
+						left: 20px;
+						top: 15px;
+					}
+				}
+				&_descr {
+					color: #000;
+					font-size: 12px;
+					font-style: normal;
+					font-weight: 500;
+					line-height: normal;
+					margin-top: 5px;
+				}
+			}
+		}
+	}
+}
