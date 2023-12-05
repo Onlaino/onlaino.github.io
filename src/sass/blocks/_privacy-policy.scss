@@ -1,0 +1,15 @@
+.container__policy {
+	padding: 20px 10px 10px 20px;
+	&-item {
+		p{
+			padding: 10px;
+		}
+		ul{
+			list-style-type: none;
+			li{
+				margin-top: 5px;
+				padding-left: 20px;
+			}
+		}
+	}
+}
