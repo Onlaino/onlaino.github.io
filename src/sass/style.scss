@@ -23,6 +23,10 @@
 	margin: 25px auto 0 auto;
 }
 
+.hidden-section {
+	display: none;
+}
+
 @import "blocks/promo";
 @import "blocks/btn";
 @import "blocks/sidepanel";
@@ -34,3 +38,6 @@
 @import "blocks/price";
 @import "blocks/contacts";
 @import "blocks/privacy-policy";
+
+@import "blocks/media";
+
